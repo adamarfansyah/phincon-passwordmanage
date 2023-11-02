@@ -1,0 +1,13 @@
+@import "../../styles/base";
+
+.form {
+  width: 100%;
+}
+
+.form__btnContainer {
+  width: 100%;
+  margin-top: 30px;
+  .btn {
+    @include primary-button;
+  }
+}

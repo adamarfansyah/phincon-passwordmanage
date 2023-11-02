@@ -1,0 +1,33 @@
+@import "../variables/colors";
+
+@mixin title {
+  font-size: 31px;
+  font-weight: 700;
+}
+
+@mixin sub-title {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: $fontKumbh;
+  color: $textDarkGray;
+}
+
+@mixin third-title {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: $fontKumbh;
+  color: $textOrange;
+}
+
+@mixin description {
+  font-family: $fontKumbh;
+  font-size: 14px;
+  color: $textGray;
+  font-weight: 500;
+}
+
+@mixin link {
+  display: flex;
+  align-items: center;
+  color: $textOrange;
+}

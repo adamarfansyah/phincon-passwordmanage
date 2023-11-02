@@ -1,0 +1,35 @@
+@import "../../styles/base";
+
+.categories {
+  background-color: white;
+  border: none;
+  box-shadow: 0px 5px 10px rgba($color: $bgOrange, $alpha: 0.8);
+  padding: 10px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: $textDarkGray;
+  font-weight: 700;
+  &:hover {
+    border: 1px solid $bgOrange;
+    box-shadow: 0px 8px 10px rgba($color: $bgOrange, $alpha: 0.8);
+  }
+}
+
+.categories__contents {
+  width: 100%;
+  margin-top: 10px;
+  background-color: white;
+  box-shadow: 0px 5px 10px rgba($color: $bgOrange, $alpha: 0.8);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.categories__link {
+  padding: 10px 20px;
+  cursor: pointer;
+  &:hover {
+    border-radius: 10px;
+    background-color: rgb(228, 228, 228);
+  }
+}

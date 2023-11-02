@@ -1,0 +1,17 @@
+@import "../../styles/base";
+
+.navigation {
+  background-color: $bgWhite;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  .btn {
+    @include primary-button;
+  }
+  .logo {
+    @include title;
+    font-size: 24px;
+    font-family: $fontOutfit;
+  }
+}

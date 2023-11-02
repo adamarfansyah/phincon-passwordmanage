@@ -1,0 +1,29 @@
+@import "./base";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: $fontOutfit;
+}
+
+body {
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    max-width: 1240px;
+  }
+}
+
+.container {
+  padding: 40px 30px;
+}
+
+h1 {
+  color: $textDarkGray;
+}
+
+h2 {
+  color: $textOrange;
+}

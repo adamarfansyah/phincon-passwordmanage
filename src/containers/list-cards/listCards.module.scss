@@ -1,0 +1,26 @@
+@import "../../styles/base";
+
+.cardsUser {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  gap: 30px;
+  margin-top: 50px;
+  @include breakpoint(medium) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include breakpoint(large) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.listCards__btnContainer {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+  .listCards__btn {
+    @include primary-button;
+    background-color: red;
+  }
+  .listCards__btnCancel {
+    @include primary-button;
+  }
+}

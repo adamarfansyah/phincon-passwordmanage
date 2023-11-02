@@ -1,0 +1,8 @@
+@import "../../styles/base";
+
+.layout {
+  padding: 0px 25px;
+  @include breakpoint(large) {
+    padding: 0 100px;
+  }
+}

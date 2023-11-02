@@ -1,0 +1,12 @@
+@import "../../styles/base";
+
+.detailUser {
+  margin: 100px 0;
+  .detailUser__header {
+    margin-bottom: 30px;
+  }
+  .detailUser__link {
+    @include link;
+    margin-bottom: 30px;
+  }
+}

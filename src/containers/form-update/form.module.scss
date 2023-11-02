@@ -1,0 +1,7 @@
+@import "../../styles/base";
+.formUpdate {
+  width: 100%;
+  @include breakpoint(large) {
+    width: 60%;
+  }
+}

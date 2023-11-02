@@ -1,0 +1,53 @@
+@import "../../styles/base";
+
+.input__container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+  @include breakpoint(large) {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  label {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .input {
+    border: none;
+    border-bottom: 1px solid $textGray;
+    padding: 10px;
+    width: 100%;
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid $bgOrange;
+    }
+    @include breakpoint(large) {
+      width: 50%;
+    }
+  }
+  .input__passwordContainer {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    @include breakpoint(large) {
+      width: 50%;
+    }
+    .input__password {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid $textGray;
+      padding: 10px;
+      &:focus {
+        outline: none;
+        border-bottom: 1px solid $bgOrange;
+      }
+    }
+    .btn__password {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+}
