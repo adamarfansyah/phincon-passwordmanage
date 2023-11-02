@@ -2,7 +2,6 @@
 import { useState } from "react";
 import { postDataUser } from "../../domain/services";
 
-import { Alert } from "@mui/material";
 import { ModalCustom, Form } from "../../components";
 
 export default function FormAdd({ isModalOpen, onClose, setIsSuccess }) {
@@ -25,11 +24,12 @@ export default function FormAdd({ isModalOpen, onClose, setIsSuccess }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (data.password.length < 6) {
-      <Alert severity="error">Password harus memiliki setidaknya 6 karakter.</Alert>;
+      alert("Password harus memiliki setidaknya 6 karakter.");
       return;
     }
     if (data.category.length <= 0) {
-      <Alert severity="error">Mohon pilih salah satu category</Alert>;
+      alert("Mohon pilih salah satu category");
+      return;
     }
     try {
       const res = await postDataUser(data);

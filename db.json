@@ -1,18 +1,11 @@
 {
   "password": [
     {
-      "id": 1,
-      "provider": "phincon.com",
-      "email": "mail@phincon.com",
-      "password": "Bethebest123",
-      "category": "work"
-    },
-    {
-      "provider": "adamupdate.com1",
-      "email": "adam@test.co",
-      "password": "test123",
+      "provider": "adam.com",
+      "email": "testerr@gmail.com",
+      "password": "adadadadadada",
       "category": "work",
-      "id": 2
+      "id": 1
     }
   ],
   "categories": [

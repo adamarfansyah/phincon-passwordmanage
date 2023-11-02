@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { updateDataUser } from "../../domain/services";
 
 import { Form } from "../../components";
-import { Alert } from "@mui/material";
 import styles from "./form.module.scss";
 
 export default function FormUpdate({ user, setIsSuccess }) {
@@ -37,10 +36,12 @@ export default function FormUpdate({ user, setIsSuccess }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (data.password.length < 6) {
-      return <Alert severity="error">Password must be 6 characters</Alert>;
+      alert("Password must be 6 characters");
+      return;
     }
     if (data.category.length <= 0) {
-      return <Alert severity="error">Please choose one category</Alert>;
+      alert("Please choose one category");
+      return;
     }
     try {
       const res = await updateDataUser(data);

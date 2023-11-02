@@ -7,7 +7,7 @@ import { CardUser, ModalCustom } from "../../components/";
 import { Alert } from "@mui/material";
 import styles from "./listCards.module.scss";
 
-export default function ListCards({ payload }) {
+export default function ListCards({ payload, fetchUser }) {
   const navigate = useNavigate();
   const [idUser, setIdUser] = useState();
   const [isSuccess, setIsSuccess] = useState();
@@ -22,6 +22,7 @@ export default function ListCards({ payload }) {
       const res = await deleteDataUser(id);
       setIsSuccess(res.message);
       onClose();
+      fetchUser();
     } catch (error) {
       console.log(error);
     }

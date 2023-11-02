@@ -14,7 +14,7 @@ function App() {
     });
   }, []);
 
-  return <HomePage categories={categories} users={users} />;
+  return <HomePage categories={categories} users={users} setUsers={setUsers} />;
 }
 
 export default App;
